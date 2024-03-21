@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.About {
+    overflow: hidden;
+    background-image: url('bg/bg (2).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.About .About__title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.About p {
+    padding: 25px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.About h1 {
+    padding: 25px;
+    color: #efefef;
+}
+
+.About__about-me-section {
+    display: flex;
+    flex-wrap: wrap;
+    color: #efefef;
+}
+
+.About__about-me-section .h1, h1 {
+  font-size: 1.4rem;
+}
+
+.About__tech-stack{
+    display: block;
+    width: 30%;
+    margin-right: 20px;
+
+    background: rgba(255,255,255,0.05);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.About__tech-stack_icons { 
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .About__tech-stack_icons img {
+    scale: 40%;
+    margin: -20px;
+    transition: all 0.3s ease-in-out;
+
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+
+  .About__tech-stack_icons img:hover {
+    scale: 55%;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .About__education {
+    position: relative;
+    max-width: 1200px;
+    margin: 300px auto;
+  }
+
+  
+  @media screen and (max-width: 1200px) {
+    .About {
+      padding: 25px;
+    }
+
+    .About p {
+      font-size: 1rem;
+    }
+
+    .About > h1 {
+      padding: 15px;
+      font-weight: 900;
+    }
+
+    .About__tech-stack {
+      margin-top: 20px;
+      width: 30%;
+      margin-right: 10px;
+    }
+
+    .About__tech-stack_icons img {
+      scale: 45%;
+      margin: -10px;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    .About {
+      padding-bottom: 10px;
+    }
+
+    .About p {
+      padding: 10px;
+      font-size: 0.8rem;
+    }
+
+    .About ~ h1 {
+      padding: 10px;
+      font-size: 2rem;
+    }
+
+    .About__tech-stack {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    .About__tech-stack h1 {
+      font-size: 1.2rem;
+    }
+
+    .About__tech-stack_icons img {
+      scale: 45%;
+      margin: -5px;
+    }
+}
